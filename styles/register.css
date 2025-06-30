@@ -13,6 +13,7 @@ footer {
     border: 1px solid;
     background-color: #10ccf4;
 }
+
 footer p {
     color: black;
     margin: 10px;
@@ -22,3 +23,5 @@ footer p {
 .card {
     width: 450px;
 }
+ 
+

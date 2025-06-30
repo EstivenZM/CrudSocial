@@ -29,3 +29,8 @@ footer p {
     width: 450px;
     padding: 20px;
 }
+
+button a {
+    text-decoration: none;
+    color: black;
+}
