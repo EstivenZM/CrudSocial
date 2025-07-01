@@ -1,0 +1,49 @@
+/*** RESET ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #10ccf4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+
+.FormProfile, .UserLogs{
+    background-color: rgb(235, 235, 235);
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px;
+}
+
+.FormProfile__content{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.container-general{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: w;
+    gap: 20px;
+}
+
+table{
+    border: 1px solid black;
+}

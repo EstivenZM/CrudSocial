@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pure CSS implementation -->
+    <link rel="stylesheet" href="../styles/register.css">
+    <!-- Bootstrap implementation -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title> Registro </title>
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+
+    <main class="d-flex justify-content-center align-items-center vh-100">
+        <section>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-center"> Registro </h2>
+                    <hr>
+                    <form id="form">
+                        <div class="mb-1">
+                            <label class="form-label" for="name"> Nombres </label>
+                            <input class="form-control" name="name" id="name" type="text" value="Stardevs" required>
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label" for="lastName"> Apellidos </label>
+                            <input class="form-control" name="lastName" id="lastName" type="text" value="Riwi" required>
+                        </div>
+
+                        <div class="mb-1">
+                            <label class="form-label" for="email"> Correo </label>
+                            <input class="form-control" name="email" id="email" type="email" value="stardevs@riwi.io"
+                                required>
+                        </div>
+
+                        <div class="mb-1">
+                            <label class="form-label" for="cellphone"> Teléfono </label>
+                            <input class="form-control" name="cellphone" id="cellphone" type="tel" value="321123231"
+                                required>
+                        </div>
+
+                        <div class="mb-1">
+                            <label class="form-label" for="password"> Contraseña </label>
+                            <input class="form-control" name="password" id="password" type="password"
+                                value="stardevs123" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="country">Pais</label>
+                            <select id="country" class="form-control" name="country" required>
+                                <option value="" disabled selected="">Seleccione...</option>
+                                <option value="colombia">Colombia</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="city">Ciudad</label>
+                            <select id="city" class="form-control" name="city" required>
+                                <option value="" disabled selected="">Seleccione...</option>
+                                <option value="medellin">Medellin</option>
+                                <option value="bogota">Bogota</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-1">
+                            <label class="form-label" for="addres"> Direccion </label>
+                            <input class="form-control" id="addres" type="text" value="direccion" required>
+                        </div>
+
+                        <div class="mb-1">
+                            <label class="form-label" for="postalCode"> Codigo Postal </label>
+                            <input class="form-control" id="postalCode" type="text" value="000123" required>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-info center center-block"> Registrar </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; Todos los derechos de esta pagina son reservados || StarDevs || 2025 </p>
+        <p> Contacto: </p>
+        <p> Ultima modificación: 26/06/2025 </p>
+    </footer>
+</body>
+<!-- Pure JavaScript implementation -->
+<script src="../js/register.js" type="module"></script>
+ <!-- SweetAlert2 implementation -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>

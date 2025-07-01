@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url(../img/paisaje.jpg) !important;
+}
+
+footer {
+    text-align: center !important;
+    border: 1px solid;
+    background-color: #10ccf4;
+}
+
+footer p {
+    color: black;
+    margin: 10px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    width: 450px;
+}
+ 
+
