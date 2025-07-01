@@ -43,21 +43,21 @@ function Message(bool) {
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let dataUser = localStorage.getItem('user');
+    let dataUser = JSON.parse(localStorage.getItem('user'));
 
     if (dataUser) {
-        dataUser = JSON.parse(dataUser);
-
+        
         if (dataUser.userEmail == email.value) {
+
             Message(true);
+
         } else {
             const info = [Math.max(...Object.keys(users).map(Number)) + 1, name.value, lastName.value, email.value, password.value, cellphone.value, country.value, city.value, addres.value, postalCode.value, "user"];
 
             registerUser(info);
 
             localStorage.setItem('user', JSON.stringify({
-                userEmail: email.value,
-                userPassword: password.value
+                userEmail: email.value
             }));
 
             Message(false);
@@ -68,10 +68,9 @@ form.addEventListener("submit", (event) => {
 
         registerUser(info);
 
-        localStorage.setItem('user', {
-            userEmail: email.value,
-            userPassword: password.value
-        });
+        localStorage.setItem('user', JSON.stringify({
+            userEmail: email.value
+        }));
 
         Message(false);
     }

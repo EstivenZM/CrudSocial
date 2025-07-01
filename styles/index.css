@@ -28,9 +28,11 @@ footer p {
 .card {
     width: 450px;
     padding: 20px;
+    display: flex;
 }
 
 button a {
     text-decoration: none;
     color: black;
 }
+
