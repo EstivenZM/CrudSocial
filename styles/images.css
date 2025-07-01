@@ -1,0 +1,97 @@
+/*** RESET ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #10ccf4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+}
+
+/*** IMAGE CONTAINER & FORM ***/
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 400px;
+}
+
+#imageUrlInput {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loadImageButton,
+#button-delete,
+#button-upload {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #10ccf4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#loadImageButton:hover,
+#button-delete:hover,
+#button-upload:hover {
+    background-color: #0aa4c3;
+}
+
+#imageContainer img,
+#uploadedImages img {
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#uploadedImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 800px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #10ccf4;
+    color: black;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
